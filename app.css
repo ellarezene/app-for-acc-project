@@ -1,0 +1,220 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+nav h1 {
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+section h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   DASHBOARD
+========================= */
+
+#dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#dashboard h2 {
+    grid-column: 1 / -1;
+}
+
+#dashboard div {
+    background-color: #f4f6f8;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#dashboard p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/* =========================
+   FORMS
+========================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #222;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+/* =========================
+   LIST AREAS
+========================= */
+
+#customers-list,
+#products-list,
+#sales-list,
+#expenses-list {
+    margin-top: 15px;
+    min-height: 50px;
+    padding: 15px;
+    background-color: #f4f6f8;
+    border-radius: 5px;
+}
+
+
+/* =========================
+   LIST ITEMS
+========================= */
+
+#customers-list > div,
+#products-list > div,
+#sales-list > div,
+#expenses-list > div {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#customers-list > div:last-child,
+#products-list > div:last-child,
+#sales-list > div:last-child,
+#expenses-list > div:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   SALE TOTAL
+========================= */
+
+#sale-total {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        width: 95%;
+    }
+}
