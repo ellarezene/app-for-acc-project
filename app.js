@@ -918,7 +918,7 @@ function updateDashboard() {
 
 
 // =====================================================
-// START APPLICATION
+// START APPLICATIO
 // =====================================================
 
 loadData();
